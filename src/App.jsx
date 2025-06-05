@@ -9,8 +9,6 @@ function App() {
   const [tomorrowsWeatherForecast, setTomorrowsWeatherForecast] = useState();
   const [isTomorrowVisible, setIsTomorrowVisible] = useState(false);
 
-  useEffect(() => {}, []); // Empty dependency array, runs only once on initial load
-
   const handleClick = async () => {
     try {
       const response = await fetch(
